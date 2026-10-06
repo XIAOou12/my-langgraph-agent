@@ -1,0 +1,10 @@
+# langGraphDome.py 依赖清单
+# 安装命令：pip install -r requirements.txt
+# 注意：import 名 ≠ pip 包名，见下方注释
+
+langgraph>=0.2.0
+langchain-openai
+langchain-core
+python-dotenv          # import 时是 `from dotenv import load_dotenv`
+tavily-python          # import 时是 `from tavily import TavilyClient`，⚠️ 不是 tavily
+streamlit>=1.36        # 网页框架，部署入口 streamlit_app.py，需要支持异步 write_stream
